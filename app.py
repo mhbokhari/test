@@ -1,7 +1,8 @@
+import pytesseract
+import os
 import streamlit as st
 import pdfplumber
-import pytesseract
-import fitz  # PyMuPDF
+import fitz 
 import requests
 import tempfile
 from PIL import Image
