@@ -1,0 +1,9 @@
+streamlit
+openai
+pdfplumber
+pytesseract
+pillow
+pymupdf
+requests
+faiss-cpu
+tiktoken
