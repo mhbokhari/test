@@ -2,8 +2,6 @@ services:
   - type: web
     name: streamlit-app
     env: python
-    buildCommand: ""
+    buildCommand: |
+      apt-get update && apt-get install -y tesseract-ocr
     startCommand: streamlit run app.py
-    build:
-      aptPackages:
-        - tesseract-ocr
