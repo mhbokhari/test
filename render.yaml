@@ -3,7 +3,9 @@ services:
     name: streamlit-app
     env: python
     buildCommand: |
-      apt-get update && apt-get install -y tesseract-ocr
+      apt-get update && \
+      apt-get install -y tesseract-ocr && \
+      cp /usr/bin/tesseract /usr/local/bin/tesseract
     startCommand: |
       bash -c "export PATH=$PATH:/usr/bin && streamlit run app.py"
 
