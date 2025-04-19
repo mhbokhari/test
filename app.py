@@ -13,7 +13,7 @@ import numpy as np
 import tiktoken
 
 # --- CONFIG ---
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = os.getenv("OPENAI_API_KEY")
 EMBED_MODEL = "text-embedding-ada-002"
 CHUNK_SIZE = 500  # tokens
 CHUNK_OVERLAP = 50
