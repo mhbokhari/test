@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: streamlit-app  # You can name this whatever you want
+    name: streamlit-app
     env: python
     buildCommand: ""
     startCommand: streamlit run app.py
-    runtime:
+    build:
       aptPackages:
         - tesseract-ocr
